@@ -32,10 +32,18 @@
     .orange{
       color: orange;
     }
-    .reveal section img  {
+    .reveal section img {
       margin: 0;
       border: 0;
       box-shadow: none;
+    }
+    .reveal .svg-big {
+      height: 580px;
+      display:block;
+      margin:auto;
+    }
+    .svg-big.octopus~.svg-big.octopus{
+      margin-top: -580px;
     }
     </style>
   </head>
@@ -59,7 +67,7 @@
         <ol>
           <li>Analyse</li>
           <li>Implem</li>
-          <li>Commits</li>
+          <li>Intégration continue</li>
           <li>Tests</li>
           <li>Validation</li>
           <li>Livraison</li>
@@ -133,6 +141,7 @@
         </section>
         <section>
           TODO schema livraison
+          <p>feature = nouvelle fonctionnalité, bugfix, changement de conf ..</p>
         </section>
         <section>
           <h3>Problème</h3>
@@ -194,17 +203,65 @@
             <li>Intégration continue (compilation + tests) - 2 min</li>
             <li>Build packaging - ?</li>
             <li>Seleniums - ?</li>
-            <li>Déploiement - 30 min</li>
+            <li>(Déploiement - 30 min)</li>
           </ul>
         </section>
       </section>
 
       <section>
         <section>
-          <h2>Commits</h2>
-          <p>Intégration continue</p>
+          <h2>Intégration continue</h2>
+          <h3>A chaque commit</h3>
+          <ul>
+            <li>Compile</li>
+            <li>Tests automatisés</li>
+            <li>(Analyse de code)</li>
+            <li class="fragment" style="color:green">Merge des features</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Octopus</h3>
+          <img class="svg-big octopus" src="img/svg/gitlog_octopus-1.svg">
+          <img class="svg-big octopus fragment" src="img/svg/gitlog_octopus-2.svg">
+          <img class="svg-big octopus fragment" src="img/svg/gitlog_octopus-3.svg">
+        </section>
+        <section>
+          <h3>Octopus</h3>
+          <ul>
+            <li class="fragment">Construction de l'environnement de test (dev)</li>
+            <li class="fragment">Plug/unplug les branches facilement</li>
+            <li class="fragment">Detection les conflits entre branches</li>
+            <li class="fragment">Assure la simplicité de la livraison</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Gestion des conflits</h3>
+          <p>1. Annuler une modif</p>
+          <p class="fragment"><code>git checkout origin/master -- file...</code></p>
+        </section>
+        <section>
+          <h3>Gestion des conflits</h3>
+          <p>2. Mettre le fichier dans le même état dans les deux branches</p>
+          <p class="fragment"><code>git checkout -m origin/featureA -- file...</code></p>
+          <div class="fragment">
+            <p>Ou</p>
+            <p><code>git cherry-pick A2</code></p>
+            <img height="400" src="img/svg/gitlog_resolution_cherry-pick.svg">
+          </div>
+        </section>
+        <section>
+          <h3>Gestion des conflits</h3>
+          <p>3. Merge entre branches</p>
+          <img height="400" src="img/svg/gitlog_resolution_merge.svg">
+          <h4 class="fragment">On impose un ordre de livraison</h4>
+        </section>
+        <section>
+          <h3>Proof of concept</h3>
+          <img src="img/teamcity-octopus.png">
         </section>
       </section>
+
+
     </div>
 
   </div>
