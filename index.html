@@ -28,89 +28,154 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-
     <style type="text/css">
     .orange{
       color: orange;
     }
+    .reveal section img  {
+      margin: 0;
+      border: 0;
+      box-shadow: none;
+    }
     </style>
-	</head>
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+     <!-- Any section element inside of this container is displayed as a slide -->
+     <div class="slides">
+      <section>
+        <img src="img/gitlog_merge_master.svg"/>
+      </section>
+      <section>
+        <h2>L'IT chez <span class="orange">LesFurets.com</span></h2>
+        <ul>
+          <li>20 personnes</li>
+          <li>Projets internes</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Cycle de developpement</h2>
+        <ol>
+          <li>Analyse</li>
+          <li>Implem</li>
+          <li>Commits</li>
+          <li>Tests</li>
+          <li>Validation</li>
+          <li>Livraison</li>
+          <li>MEP</li>
+          <li>Ops</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><p>Plus tot on résoud les problèmes, mieux c'est</p></h3>
+      </section>
+
+      <section>
         <section>
-          <img src="img/gitlog_merge_master.svg"/>
+          <h2>Ops</h2>
         </section>
         <section>
-          <h2>L'IT chez <span class="orange">LesFurets.com</span></h2>
+          <p>
+            <img src="img/zabbix_logo.png">
+          </p>
+          <p>
+            <img src="img/zabbix-stock-screen.png" height="580px">
+          </p>
+        </section> 
+        <section>
+          <h2>Stacks & logs</h2>
+          <p>Un boulot à temps plein</p>
+          <br>
+          <h3 class="fragment">Suivez les stacks coté client !</h3>
+        </section> 
+        <section>
+          <h2>Repotings métier</h2>
+          <p class="fragment">Une nouvelle fonctionnalité = un tracker</p>
+          <p class="fragment">le business devient ops !</p>
+        </section>  
+      </section>
+
+      <section>
+        <section>
+          <h2>MEP</h2>
+          <img class="fragment" src="img/go-button-green.jpg">
+        </section>
+        <section>
+          <h3>Automatiser</h3>
+          <p>Infrastructure as code</p>
+        </section>
+        <section>
+          <p>TODO schema</p>
+        </section>
+        <section>
+          <h3>Deploiement</h3>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Livraison</h2>
+        </section>
+        <section>
+          <h3><p>Plusieurs modèles possibles</p></h3>
           <ul>
-            <li>20 personnes</li>
-            <li>Projets internes</li>
+            <li>SVN (trunk/branch)</li>
+            <li>Trunk based deployment</li>
+            <li class="fragment highlight-green">Pull request</li>
           </ul>
         </section>
-
         <section>
-          <h2>Cycle de developpement</h2>
-          <ol>
-            <li>Analyse</li>
-            <li>Implem</li>
-            <li>Commits</li>
-            <li>Tests</li>
-            <li>Validation</li>
-            <li>Livraison</li>
-            <li>MEP</li>
-            <li>Ops</li>
-          </ol>
+          TODO schema master feature
         </section>
-
         <section>
-          <h3><p>Plus tot on résoud les problèmes, mieux c'est</p></h3>
+          <p style="color:green">Tâches de dev completes</p>
+          <p style="color:red">A chaque commit</p>
         </section>
-
         <section>
-          <section>
-            <h2>Ops</h2>
-          </section>
-          <section>
-            <p>
-              <img src="img/zabbix_logo.png">
-            </p>
-            <p>
-              <img src="img/zabbix-stock-screen.png" height="580px">
-            </p>
-          </section> 
-          <section>
-            <h2>Stacks & logs</h2>
-            <p>Un boulot à temps plein</p>
-            <br>
-            <h3 class="fragment">Suivez les stacks coté client !</h3>
-          </section> 
-          <section>
-            <h2>Repotings métier</h2>
-            <p class="fragment">Une nouvelle fonctionnalité = un tracker</p>
-            <p class="fragment">le business devient ops !</p>
-          </section>  
+          <h3>Problème</h3>
+          <p>Gestion des conflits</p>
+          <p class="fragment"><img height="480" src="img/finish-first.jpg"></p>
+          <p class="fragment" style="margin-top:-480px"><img height="400" src="img/big-cross.png"></p>
         </section>
+      </section>
 
+      <section>
         <section>
-          <section>
-            <h2>MEP</h2>
-            <img class="fragment" src="img/go-button-green.jpg">
-          </section>
-
+          <h2>Validation</h2>
+          <p><img src="img/feu-vert.jpg"></p>
         </section>
-      </div>
+        <section>
+          <ul>
+            <li>Code review<i class="fragment"> (trop tard)</i></li>
+            <li>Showcase / validation fonctionnelle</li>
+          </ul>
+        </section>
+        <section>
+          <p><img src="img/payage.JPG"></p>
+          <p>GO / NO GO par branche</p>
+          <p>Rien n'arrete la MEP</p>
+        </section>
+      </section>
 
+      <section>
+        <section>
+          <h2>Tests</h2>
+          <p>Par le développeur pendant l'implem</p>
+        </section>
+      </section>
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
+  </div>
 
-    <script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+
+  <script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
