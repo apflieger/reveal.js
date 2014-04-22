@@ -6,14 +6,23 @@
   border: 0;
   box-shadow: none;
 }
-.reveal .svg-big {
-  height: 580px;
+.reveal .svg {
   display:block;
   margin:auto;
-  background-color: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 8px;  
 }
-.svg-big.octopus~.svg-big.octopus{
+
+.reveal .svg.big {
+  height: 580px;
+}
+.svg.big.octopus~.svg.big.octopus{
   margin-top: -580px;
+  transition: none;
 }
 .no-rebase{
   background: url(../img/png/no-rebase.jpg) -60px -70px / 170%;

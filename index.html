@@ -96,7 +96,7 @@
         <section>
           <h3>Automatiser</h3>
           <p>Infrastructure as code</p>
-          <p><img class="fragment svg-big" src="img/svg/Packaging.svg"></p>
+          <p><img style="background:none;border:none;" class="fragment svg big" src="img/svg/Packaging.svg"></p>
         </section>
         <section>
           <h3>Deploiement</h3>
@@ -121,14 +121,14 @@
           <p style="color:red;text-decoration:line-through">A chaque commit</p>
         </section>
         <section>
-          <p><img class="svg-big" src="img/svg/gitlog_livraison.svg"></p>
+          <p><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
           <p>feature = nouvelle fonctionnalité, bugfix, changement de conf ..</p>
         </section>
         <section>
           <h3>Problème</h3>
           <p>Gestion des conflits</p>
-          <p class="fragment"><img height="480" src="img/finish-first.jpg"></p>
-          <p class="fragment" style="margin-top:-480px"><img height="400" src="img/big-cross.png"></p>
+          <p class="fragment"><img height="350" src="img/finish-first.jpg"></p>
+          <p class="fragment" style="margin-top:-325px"><img height="250" src="img/big-cross.png"></p>
         </section>
       </section>
 
@@ -158,7 +158,7 @@
           <p>Pull requests => isolement</p>
         </section>
         <section>
-          <p><img class="svg-big" src="img/svg/gitlog_environnement.svg"></p>
+          <p><img class="svg big" src="img/svg/gitlog_environnement.svg"></p>
         </section>
         <section>
           <p>Utilité de l'environnement dev</p>
@@ -180,7 +180,7 @@
         <section>
           <h3>Temps de build</h3>
           <ul>
-            <li>Intégration continue (compilation + tests) - 2 min</li>
+            <li>compilation + tests - 2 min</li>
             <li>Build packaging - ?</li>
             <li>Seleniums - ?</li>
             <li>(Déploiement - 30 min)</li>
@@ -201,17 +201,17 @@
         </section>
         <section>
           <h3>Octopus</h3>
-          <img class="svg-big octopus" src="img/svg/gitlog_octopus-1.svg">
-          <img class="svg-big octopus fragment" src="img/svg/gitlog_octopus-2.svg">
-          <img class="svg-big octopus fragment" src="img/svg/gitlog_octopus-3.svg">
+          <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-1.svg">
+          <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-2.svg">
+          <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-3.svg">
         </section>
         <section>
           <h3>Octopus</h3>
           <ul>
             <li class="fragment">Construction de l'environnement de test (dev)</li>
-            <li class="fragment">Plug/unplug les branches facilement</li>
             <li class="fragment">Detection les conflits entre branches</li>
             <li class="fragment">Assure la simplicité de la livraison</li>
+            <li class="fragment">Plug/unplug les branches facilement</li>
           </ul>
         </section>
         <section>
@@ -226,19 +226,19 @@
           <div class="fragment">
             <p>Ou</p>
             <p><code>git cherry-pick A2</code></p>
-            <img height="400" src="img/svg/gitlog_resolution_cherry-pick.svg">
+            <img height="400" class="svg" src="img/svg/gitlog_resolution_cherry-pick.svg">
           </div>
         </section>
         <section>
           <h3>Gestion des conflits</h3>
           <p>3. Merge entre branches</p>
-          <img height="400" src="img/svg/gitlog_resolution_merge.svg">
-          <h4 class="fragment">On impose un ordre de livraison</h4>
+          <img height="400" class="svg" src="img/svg/gitlog_resolution_merge.svg">
+          <p><h4 class="fragment">On impose un ordre de livraison</h4></p>
           <div class="fragment no-rebase"></div>
         </section>
         <section>
           <h3>Proof of concept</h3>
-          <img src="img/teamcity-octopus.png">
+          <img width="75%" src="img/teamcity-octopus.png">
         </section>
       </section>
 
