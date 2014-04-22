@@ -28,24 +28,7 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-    <style type="text/css">
-    .orange{
-      color: orange;
-    }
-    .reveal section img {
-      margin: 0;
-      border: 0;
-      box-shadow: none;
-    }
-    .reveal .svg-big {
-      height: 580px;
-      display:block;
-      margin:auto;
-    }
-    .svg-big.octopus~.svg-big.octopus{
-      margin-top: -580px;
-    }
-    </style>
+  <link rel="stylesheet" href="css/custom.css">
   </head>
 
   <body>
@@ -66,7 +49,7 @@
         <h2>Cycle de developpement</h2>
         <ol>
           <li>Analyse</li>
-          <li>Implem</li>
+          <li>Implémentation</li>
           <li>Intégration continue</li>
           <li>Tests</li>
           <li>Validation</li>
@@ -113,9 +96,7 @@
         <section>
           <h3>Automatiser</h3>
           <p>Infrastructure as code</p>
-        </section>
-        <section>
-          <p>TODO schema</p>
+          <p><img class="fragment svg-big" src="img/svg/Packaging.svg"></p>
         </section>
         <section>
           <h3>Deploiement</h3>
@@ -137,10 +118,10 @@
         </section>
         <section>
           <p style="color:green">Tâches de dev completes</p>
-          <p style="color:red">A chaque commit</p>
+          <p style="color:red;text-decoration:line-through">A chaque commit</p>
         </section>
         <section>
-          TODO schema livraison
+          <p><img class="svg-big" src="img/svg/gitlog_livraison.svg"></p>
           <p>feature = nouvelle fonctionnalité, bugfix, changement de conf ..</p>
         </section>
         <section>
@@ -172,13 +153,12 @@
       <section>
         <section>
           <h2>Tests</h2>
-          <p>Par le développeur pendant l'implem</p>
         </section>
         <section>
           <p>Pull requests => isolement</p>
         </section>
         <section>
-          Schema environnements
+          <p><img class="svg-big" src="img/svg/gitlog_environnement.svg"></p>
         </section>
         <section>
           <p>Utilité de l'environnement dev</p>
@@ -254,6 +234,7 @@
           <p>3. Merge entre branches</p>
           <img height="400" src="img/svg/gitlog_resolution_merge.svg">
           <h4 class="fragment">On impose un ordre de livraison</h4>
+          <div class="fragment no-rebase"></div>
         </section>
         <section>
           <h3>Proof of concept</h3>
@@ -263,7 +244,7 @@
 
       <section>
         <section>
-          <h2>Code</h2>
+          <h2>Implémentation</h2>
         </section>
       </section>
     </div>

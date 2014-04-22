@@ -1,0 +1,25 @@
+.orange{
+  color: orange;
+}
+.reveal section img {
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+.reveal .svg-big {
+  height: 580px;
+  display:block;
+  margin:auto;
+  background-color: transparent;
+}
+.svg-big.octopus~.svg-big.octopus{
+  margin-top: -580px;
+}
+.no-rebase{
+  background: url(../img/png/no-rebase.jpg) -60px -70px / 170%;
+  width: 165px;
+  height: 200px;
+  left: 550px;
+  position: relative;
+  top: -270px;
+}
