@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70181406"
-     inkscape:cx="588.35157"
-     inkscape:cy="499.29671"
+     inkscape:cx="366.07047"
+     inkscape:cy="535.68133"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -500,7 +500,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -509,16 +509,6 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
-    <rect
-       inkscape:export-ydpi="54.92128"
-       inkscape:export-xdpi="54.92128"
-       inkscape:export-filename="C:\Users\chris\Desktop\Arnaud\gitlog_octopus-1.png"
-       y="-47.63784"
-       x="-200"
-       height="980"
-       width="1200"
-       id="rect11933"
-       style="fill:#f0f0f0;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9, 3;stroke-dashoffset:0" />
     <path
        style="stroke-linejoin:miter;marker-end:url(#Arrow1Mendf);stroke-opacity:1;stroke:#ff0000;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:4.83045959;fill:none"
        d="m 192.75,494.36218 0,-112.00002"
@@ -733,7 +723,7 @@
        sodipodi:cy="152.36218"
        sodipodi:cx="180"
        id="path3271-5-4"
-       style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#00ff00;stroke-width:10.66666698;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffd355;fill-opacity:1;fill-rule:nonzero;stroke:#00ff00;stroke-width:10.66666698000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        sodipodi:type="arc" />
     <path
        transform="matrix(0.75,0,0,0.75,546,228.09052)"

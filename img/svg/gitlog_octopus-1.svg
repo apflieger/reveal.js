@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70181406"
-     inkscape:cx="609.19834"
-     inkscape:cy="504.49451"
+     inkscape:cx="669.62523"
+     inkscape:cy="561.67035"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -472,7 +472,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -481,16 +481,6 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
-    <rect
-       inkscape:export-ydpi="54.92128"
-       inkscape:export-xdpi="54.92128"
-       inkscape:export-filename="C:\Users\chris\Desktop\Arnaud\gitlog_octopus-1.png"
-       y="-47.63784"
-       x="-200"
-       height="980"
-       width="1200"
-       id="rect11933"
-       style="fill:#f0f0f0;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9, 3;stroke-dashoffset:0" />
     <path
        style="stroke-linejoin:miter;marker-end:url(#Arrow1Mend2);stroke-opacity:1;stroke:#ff0000;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:4.83045959;fill:none"
        d="m 192.75,494.36218 0,-112.00002"
