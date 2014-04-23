@@ -31,6 +31,10 @@
   border: 0;
   box-shadow: none;
 }
+.reveal .svg.packaging {
+  background:none;
+  border:none;
+}
 .reveal .svg {
   display:block;
   margin:auto;
