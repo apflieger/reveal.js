@@ -55,20 +55,19 @@
 
       <section>
         <h2>Cycle de developpement</h2>
-        <ol>
-          <li>Analyse</li>
-          <li>Implémentation</li>
-          <li>Intégration continue</li>
-          <li>Tests</li>
-          <li>Validation</li>
-          <li>Livraison</li>
-          <li>Mise en production</li>
-          <li>Exploitation</li>
-        </ol>
-      </section>
-
-      <section>
-        <h3><p>Plus tôt on résoud les problèmes, mieux c'est</p></h3>
+        <p>
+          <ol>
+            <li>Analyse</li>
+            <li>Implémentation</li>
+            <li>Intégration continue</li>
+            <li>Tests</li>
+            <li>Validation</li>
+            <li>Livraison</li>
+            <li>Mise en production</li>
+            <li>Exploitation</li>
+          </ol>
+        </p>
+        <p class="fragment" style="margin-top:20px;font-size:1.2em">Plus tôt on résoud les problèmes, mieux c'est</p>
       </section>
 
       <section>
@@ -108,13 +107,14 @@
 
           <p class="fragment">
             <p style="text-decoration:underline">Packaging</p>
-            <img class="packaging svg big" src="img/svg/Packaging.svg"></p>
-          </section>
-          <section>
+            <p><img class="packaging svg big" src="img/svg/Packaging.svg"></p>
+          </p>
+        </section>
+        <section>
             <h3>Deploiement</h3>
             <p>30 min</p>
-          </section>
         </section>
+      </section>
 
         <section>
           <section>
@@ -264,7 +264,8 @@
 
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="js/jquery-1.7.1.min.js"></script>
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.min.js"></script>
     <script src="js/menu.js"></script>
@@ -278,6 +279,7 @@
 				progress: true,
 				history: true,
 				center: true,
+        embedded: true,
 
 				theme: 'moon', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none

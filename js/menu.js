@@ -1,9 +1,21 @@
 Reveal.addEventListener('ready', function(ready) {
 	var update = function(index) {
+		console.log(index - 1 > 0);
 		$('.menu>div').removeClass('current');
 		var length = $('.menu>div').length;
-		if (index - 2 > 0)
-			$($('.menu>div')[length - index + 2]).addClass('current');
+		if (index - 1 > 0){
+			$($('.menu>div')[length - index + 1]).addClass('current');
+			$('.menu').addClass('expand');
+			$('.menu').removeClass('collapse');
+			$('.reveal').addClass('collapse');
+			$('.reveal').removeClass('expand');
+		}
+		else {
+			$('.menu').addClass('collapse');
+			$('.menu').removeClass('expand');
+			$('.reveal').addClass('expand');
+			$('.reveal').removeClass('collapse');
+		}
 	};
 
 	update(Reveal.getIndices().h);
