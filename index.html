@@ -104,173 +104,174 @@
         <section>
           <h3>Automatiser</h3>
           <p>"Infrastructure as code"</p>
-
-          <p class="fragment">
+          <p class="fragment" data-fragment-index="2">-> Detection d'environnement</p>
+          <div class="fragment packaging" data-fragment-index="1">
             <p style="text-decoration:underline">Packaging</p>
-            <p><img class="packaging svg big" src="img/svg/Packaging.svg"></p>
-          </p>
+            <img class="svg big" src="img/svg/Packaging.svg">
+          </div>
+          <p class="packaging fragment" data-fragment-index="3"><img class="svg big" src="img/svg/detection-environnement.svg"></p>
         </section>
         <section>
-            <h3>Deploiement</h3>
-            <p>30 min</p>
+          <h3>Deploiement</h3>
+          <p>30 min</p>
         </section>
       </section>
 
+      <section>
         <section>
-          <section>
-            <h2>Livraison</h2>
-          </section>
-          <section>
-            <h3><p>Plusieurs modèles possibles</p></h3>
-            <ul>
-              <li>SVN (trunk/branch)</li>
-              <li>Trunk based deployment</li>
-              <li class="fragment highlight-green">Pull request</li>
-            </ul>
-          </section>
-          <section>
-            <p>On livre ...</p>
-            <p style="color:green">des tâches de dev completes</p>
-            <p style="color:red;text-decoration:line-through">à chaque commit</p>
-          </section>
-          <section>
-            <p><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
-            <p>feature = nouvelle fonctionnalité, bugfix, changement de conf ..</p>
-          </section>
-          <section>
-            <h3>Problème</h3>
-            <p>Gestion des conflits</p>
-            <p class="fragment"><img height="350" src="img/finish-first.jpg"></p>
-            <p class="fragment" style="margin-top:-325px"><img height="250" src="img/big-cross.png"></p>
-          </section>
+          <h2>Livraison</h2>
         </section>
-
         <section>
-          <section>
-            <h2>Validation</h2>
-            <p><img src="img/feu-vert.jpg"></p>
-          </section>
-          <section>
-            <ul>
-              <li>Code review<i class="fragment"> (trop tard)</i></li>
-              <li>Showcase / validation fonctionnelle</li>
-            </ul>
-          </section>
-          <section>
-            <p><img src="img/payage.JPG"></p>
-            <p>GO / NO GO par branche</p>
-            <p>Rien n'arrete la MEP</p>
-          </section>
+          <h3><p>Plusieurs modèles possibles</p></h3>
+          <ul>
+            <li>SVN (trunk/branch)</li>
+            <li>Trunk based deployment</li>
+            <li class="fragment highlight-green">Pull request</li>
+          </ul>
         </section>
-
         <section>
-          <section>
-            <h2>Tests</h2>
-          </section>
-          <section>
-            <p>Pull requests => isolement</p>
-          </section>
-          <section>
-            <p><img class="svg big" src="img/svg/gitlog_environnement.svg"></p>
-          </section>
-          <section>
-            <p>Utilité de l'environnement dev</p>
-            <ul>
-              <li>Dogfooding</li>
-              <li>Seleniums <i class="fragment">(trop tard)</i></li>
-              <li>Validation</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Dogfooding</h3>
-            <p>Capacité de test naturelle de l'équipe</p>
-            <ul>
-              <li>Multi navigateurs</li>
-              <li>Multi devices</li>
-              <li>Suivit des stacks/logs</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Temps de build</h3>
-            <ul>
-              <li>compilation + tests - 2 min</li>
-              <li>Build packaging - ?</li>
-              <li>Seleniums - ?</li>
-              <li>(Déploiement - 30 min)</li>
-            </ul>
-          </section>
+          <p>On livre ...</p>
+          <p style="color:green">des tâches de dev completes</p>
+          <p style="color:red;text-decoration:line-through">à chaque commit</p>
         </section>
-
         <section>
-          <section>
-            <h2>Intégration continue</h2>
-            <h3>A chaque commit</h3>
-            <ul>
-              <li>Compilation</li>
-              <li>Tests automatisés</li>
-              <li>(Analyse de code)</li>
-              <li class="fragment" style="color:green">Merge des features</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Octopus</h3>
-            <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-1.svg">
-            <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-2.svg">
-            <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-3.svg">
-          </section>
-          <section>
-            <h3>Octopus</h3>
-            <ul>
-              <li class="fragment">Construction de l'environnement de test (dev)</li>
-              <li class="fragment">Detection les conflits entre branches</li>
-              <li class="fragment">Assure la simplicité de la livraison</li>
-              <li class="fragment">Plug/unplug les branches facilement</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Gestion des conflits</h3>
-            <p>1. Annuler une modif</p>
-            <p class="fragment"><code>git checkout origin/master -- file...</code></p>
-          </section>
-          <section>
-            <h3>Gestion des conflits</h3>
-            <p>2. Mettre le fichier dans le même état dans les deux branches</p>
-            <p class="fragment"><code>git checkout -m origin/featureA -- file...</code></p>
-            <div class="fragment">
-              <p>Ou</p>
-              <p><code>git cherry-pick A2</code></p>
-              <img height="400" class="svg" src="img/svg/gitlog_resolution_cherry-pick.svg">
-            </div>
-          </section>
-          <section>
-            <h3>Gestion des conflits</h3>
-            <p>3. Merge entre branches</p>
-            <img height="400" class="svg" src="img/svg/gitlog_resolution_merge.svg">
-            <p><h4 class="fragment">On impose un ordre de livraison</h4></p>
-            <div class="fragment no-rebase"></div>
-          </section>
-          <section>
-            <h3>Proof of concept</h3>
-            <img width="75%" src="img/teamcity-octopus.png">
-          </section>
+          <p><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
+          <p>feature = nouvelle fonctionnalité, bugfix, changement de conf ..</p>
         </section>
-
         <section>
-          <section>
-            <h2>Implémentation</h2>
-          </section>
+          <h3>Problème</h3>
+          <p>Gestion des conflits</p>
+          <p class="fragment"><img height="350" src="img/finish-first.jpg"></p>
+          <p class="fragment" style="margin-top:-325px"><img height="250" src="img/big-cross.png"></p>
         </section>
-      </div>
+      </section>
 
+      <section>
+        <section>
+          <h2>Validation</h2>
+          <p><img src="img/feu-vert.jpg"></p>
+        </section>
+        <section>
+          <ul>
+            <li>Code review<i class="fragment"> (trop tard)</i></li>
+            <li>Showcase / validation fonctionnelle</li>
+          </ul>
+        </section>
+        <section>
+          <p><img src="img/payage.JPG"></p>
+          <p>GO / NO GO par branche</p>
+          <p>Rien n'arrete la MEP</p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Tests</h2>
+        </section>
+        <section>
+          <p>Pull requests => isolement</p>
+        </section>
+        <section>
+          <p><img class="svg big" src="img/svg/gitlog_environnement.svg"></p>
+        </section>
+        <section>
+          <p>Utilité de l'environnement dev</p>
+          <ul>
+            <li>Dogfooding</li>
+            <li>Seleniums <i class="fragment">(trop tard)</i></li>
+            <li>Validation</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Dogfooding</h3>
+          <p>Capacité de test naturelle de l'équipe</p>
+          <ul>
+            <li>Multi navigateurs</li>
+            <li>Multi devices</li>
+            <li>Suivit des stacks/logs</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Temps de build</h3>
+          <ul>
+            <li>compilation + tests - 2 min</li>
+            <li>Build packaging - ?</li>
+            <li>Seleniums - ?</li>
+            <li>(Déploiement - 30 min)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Intégration continue</h2>
+          <h3>A chaque commit</h3>
+          <ul>
+            <li>Compilation</li>
+            <li>Tests automatisés</li>
+            <li>(Analyse de code)</li>
+            <li class="fragment" style="color:green">Merge des features</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Octopus</h3>
+          <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-1.svg">
+          <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-2.svg">
+          <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-3.svg">
+        </section>
+        <section>
+          <h3>Octopus</h3>
+          <ul>
+            <li class="fragment">Construction de l'environnement de test (dev)</li>
+            <li class="fragment">Detection les conflits entre branches</li>
+            <li class="fragment">Assure la simplicité de la livraison</li>
+            <li class="fragment">Plug/unplug les branches facilement</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Gestion des conflits</h3>
+          <p>1. Annuler une modif</p>
+          <p class="fragment"><code>git checkout origin/master -- file...</code></p>
+        </section>
+        <section>
+          <h3>Gestion des conflits</h3>
+          <p>2. Mettre le fichier dans le même état dans les deux branches</p>
+          <p class="fragment"><code>git checkout -m origin/featureA -- file...</code></p>
+          <div class="fragment">
+            <p>Ou</p>
+            <p><code>git cherry-pick A2</code></p>
+            <img height="400" class="svg" src="img/svg/gitlog_resolution_cherry-pick.svg">
+          </div>
+        </section>
+        <section>
+          <h3>Gestion des conflits</h3>
+          <p>3. Merge entre branches</p>
+          <img height="400" class="svg" src="img/svg/gitlog_resolution_merge.svg">
+          <p><h4 class="fragment">On impose un ordre de livraison</h4></p>
+          <div class="fragment no-rebase"></div>
+        </section>
+        <section>
+          <h3>Proof of concept</h3>
+          <img width="75%" src="img/teamcity-octopus.png">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Implémentation</h2>
+        </section>
+      </section>
     </div>
 
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <script src="js/jquery-1.7.1.min.js"></script>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
-    <script src="js/menu.js"></script>
+  </div>
 
-    <script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <script src="js/jquery-1.7.1.min.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script src="js/menu.js"></script>
+
+  <script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration

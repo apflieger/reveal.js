@@ -44,9 +44,12 @@
   border: 0;
   box-shadow: none;
 }
-.reveal .svg.packaging {
+.reveal .packaging .svg {
   background:none;
   border:none;
+}
+.packaging+.packaging{
+  margin-top: -580px;
 }
 .reveal .svg {
   display:block;
