@@ -1,5 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
 .orange{
   color: orange;
+}
+.menu {
+  float: left;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: #93A1A1;
+  width: 30%;
+  margin-top: 15%;
+}
+.menu>div{
+  margin: 20px;
+  padding-left:15px;
+}
+.menu>div.current{
+  padding-left: 0px;
+  color: green;
+}
+.menu>div.current:before{
+  content: ">";
+}
+.reveal{
+  float:right;
+  width:70%;
 }
 .reveal section img {
   margin: 0;
