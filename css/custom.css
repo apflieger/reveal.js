@@ -65,6 +65,12 @@
 .reveal .svg.big {
   height: 580px;
 }
+.reveal p.dev{
+  margin-bottom: 0;
+}
+.dev+.dev{
+  margin-top: -580px; 
+}
 .svg.big.octopus~.svg.big.octopus{
   margin-top: -580px;
   transition: none;
