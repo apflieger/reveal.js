@@ -3,6 +3,9 @@
 .orange{
   color: orange;
 }
+.green{
+  color: green;
+}
 body{
   display:flex;
 }
@@ -62,7 +65,8 @@ body{
   box-sizing: border-box;
   background-color: white;
   border: 2px solid grey;
-  border-radius: 8px;  
+  border-radius: 8px;
+  padding: 20px;
 }
 
 .reveal .svg.big {

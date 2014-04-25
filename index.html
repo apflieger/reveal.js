@@ -197,15 +197,6 @@
             <li>Suivit des stacks/logs</li>
           </ul>
         </section>
-        <section>
-          <h3>Temps de build</h3>
-          <ul>
-            <li>compilation + tests - 2 min</li>
-            <li>Build packaging - ?</li>
-            <li>Seleniums - ?</li>
-            <li>(Déploiement - 30 min)</li>
-          </ul>
-        </section>
       </section>
 
       <section>
@@ -265,6 +256,89 @@
       <section>
         <section>
           <h2>Implémentation</h2>
+          <p class="fragment">Qu'est ce qui change ?</p>
+        </section>
+        <section>
+          <h3>Eviter les conflits</h3>
+          <blockquote class="fragment">La facilité de merge témoigne de la santé du code</blockquote>
+          <div class="fragment" style="margin-top:50px;">
+            <p><span class="green">S</span>OLID</p>
+            <p class="green">Single responsibility principle</p>
+          </div>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+              ###Connaître les patterns à problèmes
+               
+              ```
+              ...
+              int ID_COURTIER_B2C_MGC = 112;
+              int ID_COURTIER_B2C_AMPLI = 113;
+              int ID_COURTIER_B2C_FMA = 114;
+              int ID_COURTIER_B2C_MILTIS = 115;
+              int ID_COURTIER_B2C_SMATIS = 116;
+              ```
+
+              ```
+              import static net.courtanet.tm.gwt.common.event.Event.releaseSourceEvent;
+              import static net.courtanet.ui.auto.EFieldAuto.EDM_COMPARE_RENEWAL;
+              import static net.courtanet.ui.core.tracking.ETrackingToken.renewal_not_visible;
+              import static net.courtanet.ui.core.tracking.ETrackingToken.renewal_visible;
+              ```              
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+              ###Connaître les patterns solides
+               
+              ```
+              @InjectEditor(@OnField(auto = { PRI_DON_ACCOMP, SEC_DON_ACCOMP }))
+              public final class ConducteurConduiteAccompFieldEditor extends AbstractConducteurFieldEditor {
+
+                  @Override
+                  protected final void updateFromContext(Field field, EFieldAuto fieldId, AutoContext context) {
+                      final Conducteur conducteur = getConducteur(context, fieldId);
+                      if (conducteur != null && conducteur.getPermisConduire() != null) {
+                          field.toOuiNon().setValue(conducteur.getPermisConduire().isAvecConduiteAccompagnee());
+                      }
+                  }
+
+                  @Override
+                  protected final void updateContext(Field field, EFieldAuto fieldId, AutoContext context) {
+                      getConducteur(context, fieldId).getPermisConduire().setAvecConduiteAccompagnee(field.toOuiNon().getValue());
+                  }
+
+              }
+              ```
+          </script>
+        </section>
+        <section>
+          <h3>Feature toggle</h3>
+          <div class="fragment">
+            <p>Quand ?</p>
+            <ul>
+              <li>Beaucoup de conflits</li>
+              <li>Feature instable</li>
+              <li>Développement long</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Passer un refactoring</h2>
+          <p class="fragment">Perturbations inévitables</p>
+          <ul>
+            <li class="fragment">Directement dans le master</li>
+            <li class="fragment">Faire un point de synchronisation</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Temps de build</h3>
+          <ul>
+            <li>compilation + tests - 2 min</li>
+            <li>Build packaging - ?</li>
+            <li>Seleniums - ?</li>
+            <li>(Déploiement - 30 min)</li>
+          </ul>
         </section>
       </section>
     </div>
