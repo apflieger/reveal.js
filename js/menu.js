@@ -3,8 +3,8 @@ Reveal.addEventListener('ready', function(ready) {
 		console.log(index - 1 > 0);
 		$('.menu>div').removeClass('current');
 		var length = $('.menu>div').length;
-		if (index - 2 > 0){
-			$($('.menu>div')[length - index + 2]).addClass('current');
+		if (index - 1 > 0){
+			$($('.menu>div')[length - index + 1]).addClass('current');
 			$('.menu').addClass('expand');
 			$('.menu').removeClass('collapse');
 			$('.reveal').addClass('collapse');

@@ -75,6 +75,12 @@ body{
 .reveal .svg.big {
   height: 580px;
 }
+.blue-green .svg{
+  height: 207px;
+}
+.blue-green+.blue-green{
+  margin-top: -217px;
+}
 .reveal p.dev{
   margin-bottom: 0;
 }
