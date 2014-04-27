@@ -50,6 +50,9 @@ body{
   border: 0;
   box-shadow: none;
 }
+.reveal section {
+  min-width: 1000px;
+}
 .reveal .packaging .svg {
   background:none;
   border:none;

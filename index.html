@@ -33,7 +33,6 @@
 
   <body>
     <div class="menu">
-      <div>Analyse</div>
       <div>Implémentation</div>
       <div>Intégration continue</div>
       <div>Tests</div>
@@ -88,14 +87,14 @@
           </p>
         </section> 
         <section>
-          <h2>Stacks & logs</h2>
+          <h2>Erreurs & logs</h2>
           <p>Un boulot à temps plein</p>
           <br>
-          <h3 class="fragment">Suivez les stacks coté client !</h3>
+          <h3 class="fragment">Suivez les erreurs coté client !</h3>
         </section> 
         <section>
           <h2>Reportings métier</h2>
-          <p class="fragment">Excels, emails, backoffice ...</p>
+          <p class="fragment">Excel, emails, backoffice ...</p>
           <p class="fragment">Une nouvelle fonctionnalité = un tracker</p>
           <p class="fragment">le business devient ops !</p>
         </section>  
@@ -109,7 +108,6 @@
         <section>
           <h3>Automatiser</h3>
           <p>"Infrastructure as code"</p>
-          <p class="fragment" data-fragment-index="2">-> Detection d'environnement</p>
           <div class="fragment packaging" data-fragment-index="1">
             <p style="text-decoration:underline">Packaging</p>
             <img class="svg big" src="img/svg/Packaging.svg">
@@ -327,6 +325,7 @@
           <h2>Passer un refactoring</h2>
           <p class="fragment">Perturbations inévitables</p>
           <ul>
+            <li class="fragment">En feature branch normale</li>
             <li class="fragment">Directement dans le master</li>
             <li class="fragment">Faire un point de synchronisation</li>
           </ul>
@@ -334,10 +333,10 @@
         <section>
           <h3>Temps de build</h3>
           <ul>
-            <li>compilation + tests - 2 min</li>
-            <li>Build packaging - ?</li>
-            <li>Seleniums - ?</li>
-            <li>(Déploiement - 30 min)</li>
+            <li>compilation + tests - 15 min -> 2 min</li>
+            <li>Build packaging - 10 min -> 6min </li>
+            <li>Seleniums - 50min -> 8 min</li>
+            <li>Déploiement - 1h30 -> 6min</li>
           </ul>
         </section>
       </section>
