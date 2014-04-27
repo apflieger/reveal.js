@@ -116,7 +116,11 @@
         </section>
         <section>
           <h3>Deploiement</h3>
-          <p>30 min</p>
+          <p>Blue/green</p>
+          <ul class="fragment">
+            <li>Environnement de production dupliqué</li>
+            <li>Loadbalancer en entrée</li>
+          </ul>
         </section>
       </section>
 
@@ -285,31 +289,7 @@
               ```              
           </script>
         </section>
-        <section data-markdown>
-          <script type="text/template">
-              ###Connaître les patterns solides
-               
-              ```
-              @InjectEditor(@OnField(auto = { PRI_DON_ACCOMP, SEC_DON_ACCOMP }))
-              public final class ConducteurConduiteAccompFieldEditor extends AbstractConducteurFieldEditor {
-
-                  @Override
-                  protected final void updateFromContext(Field field, EFieldAuto fieldId, AutoContext context) {
-                      final Conducteur conducteur = getConducteur(context, fieldId);
-                      if (conducteur != null && conducteur.getPermisConduire() != null) {
-                          field.toOuiNon().setValue(conducteur.getPermisConduire().isAvecConduiteAccompagnee());
-                      }
-                  }
-
-                  @Override
-                  protected final void updateContext(Field field, EFieldAuto fieldId, AutoContext context) {
-                      getConducteur(context, fieldId).getPermisConduire().setAvecConduiteAccompagnee(field.toOuiNon().getValue());
-                  }
-
-              }
-              ```
-          </script>
-        </section>
+      
         <section>
           <h3>Feature toggle</h3>
           <div class="fragment">
@@ -325,7 +305,6 @@
           <h2>Passer un refactoring</h2>
           <p class="fragment">Perturbations inévitables</p>
           <ul>
-            <li class="fragment">En feature branch normale</li>
             <li class="fragment">Directement dans le master</li>
             <li class="fragment">Faire un point de synchronisation</li>
           </ul>
