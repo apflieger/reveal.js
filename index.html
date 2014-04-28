@@ -127,17 +127,17 @@
           <h2>Livraison</h2>
         </section>
         <section>
-          <h3><p>Plusieurs modèles possibles</p></h3>
+          <h3><p>Modèle utilisé</p></h3>
           <ul>
-            <li>SVN (trunk/branch)</li>
-            <li>Trunk based deployment</li>
-            <li class="fragment highlight-green">Pull request</li>
+            <li style="color:red;text-decoration:line-through">Trunk/branch</li>
+            <li style="color:orange">Mainline based deployment</li>
+            <li class="green">Pull request</li>
           </ul>
         </section>
         <section>
           <p>On livre ...</p>
-          <p style="color:green">des tâches de dev complètes</p>
-          <p style="color:red;text-decoration:line-through">à chaque commit</p>
+          <p style="color:green">les développements complets</p>
+          <p style="color:red;text-decoration:line-through">pas chaque commit</p>
         </section>
         <section>
           <p><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
@@ -192,7 +192,6 @@
           <ul>
             <li>Compilation</li>
             <li>Tests automatisés</li>
-            <li>(Analyse de code)</li>
             <li class="fragment" style="color:green">Merge des feature branches</li>
           </ul>
         </section>
@@ -213,16 +212,15 @@
         </section>
         <section>
           <h3>Gestion des conflits</h3>
-          <p>1. Annuler une modif</p>
-          <p class="fragment"><code>git checkout origin/master -- file...</code></p>
+          <p>Annuler une modif devient simple</p>
         </section>
         <section>
           <h3>Gestion des conflits</h3>
           <p>2. Mettre le fichier dans le même état dans les deux branches</p>
-          <p class="fragment"><code>git checkout -m origin/featureA -- file...</code></p>
+          <p class="fragment">Recopie manuelle</p>
           <div class="fragment">
             <p>Ou</p>
-            <p><code>git cherry-pick A2</code></p>
+            <p>cherry-pick</p>
             <img height="400" class="svg" src="img/svg/gitlog_resolution_cherry-pick.svg">
           </div>
         </section>
