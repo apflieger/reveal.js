@@ -1,9 +1,10 @@
 Reveal.addEventListener('ready', function(ready) {
 	var update = function(index) {
-		console.log(index - 1 > 0);
 		$('.menu>div').removeClass('current');
 		var length = $('.menu>div').length;
-		if (index >= 3 && index < 9){
+		var first = $('.first').index();
+		var last = $('.last').index();
+		if (index >= first && index <= last){
 			$($('.menu>div')[length - index + 2]).addClass('current');
 			$('.menu').addClass('expand');
 			$('.menu').removeClass('collapse');
