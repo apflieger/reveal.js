@@ -99,3 +99,7 @@ body{
   position: relative;
   top: -270px;
 }
+.reveal section .book{
+  height: 220px;
+  margin-left: 30px;
+}
