@@ -46,15 +46,14 @@
 
       <section>
         <section>
-            <h1>Continuous delivery</h1>
-            <h2>Le contexte</h2>
+          <h1>Continuous delivery</h1>
+          <h2>Le contexte</h2>
         </section>
         <section>
           <h2>LesFurets.com</h2>
           <ul>
             <li>16 Développeurs</li>
             <li>2 QE, 1 Ops, 1 Archi-codeur</li>
-            <li>2 Feature Teams, 1 Component Team</li>
           </ul>
         </section>
         <section>
@@ -71,17 +70,17 @@
           <h2>2012 - Mensuel</h2>
           <ul>
             <li>Sprint de 6 semaines</li>
-            <li>Subversion : Trunk + 1 Branche de prod</li>
-            <li>Contribution par commit sur trunk</li>
+            <li>Subversion : Trunk + 1 Branche de maintenance</li>
             <li>Build 15min + Selenium 1h</li>
-            <li>Mise en production mensuelle 1h30</li>
+            <li>Recette 3-4 jours</li>
+            <li>Mise en production manuelle 1h30</li>
           </ul>
         </section>
         <section>
           <h2>2014 - Daily</h2>
           <ul>
             <li>Développement par User Story</li>
-            <li>GIT : Master + >30 Branches</li>
+            <li>GIT : Master + pull request</li>
             <li>Livraison de ce qui est prêt à J+2</li>
             <li>Build 3min + Selenium 10min</li>
             <li>Mise en production en 6 min</li>
@@ -94,7 +93,7 @@
           </ul>
         </section>
         <section>
-          <h2>Cycle d'une story</h2>
+          <h2>Cycle d'une user story</h2>
           <ul>
             <li>Inception : Idées</li>
             <li>Analyse : Selection, Objectifs</li>
@@ -102,8 +101,13 @@
             <li>Livraison : ce qui est prêt à J+2</li>
             <li>Monitoring : en production</li>
           </ul>
+          <div class="fragment" style="margin-top: 40px;">
+            <h3>Indépendant du reste</h3>
+            <p>Pad de deadline ni d'estimation</p>
+          </div>
         </section>
       </section>
+
       <section>
         <h1>Continuous delivery</h1>
         <h2>Notre pratique</h2>
@@ -111,17 +115,16 @@
 
       <section>
         <h2>Cycle de developpement</h2>
-        <p>
-          <ol>
-            <li>Implémentation</li>
-            <li>Intégration continue</li>
-            <li>Tests</li>
-            <li>Validation</li>
-            <li>Livraison</li>
-            <li>Mise en production</li>
-            <li>Exploitation</li>
-          </ol>
-        </p>
+
+        <ol>
+          <li>Implémentation</li>
+          <li>Intégration continue</li>
+          <li>Validation</li>
+          <li>Livraison</li>
+          <li>Mise en production</li>
+          <li>Exploitation</li>
+        </ol>
+
         <h3 class="fragment" style="margin-top:20px;font-size:1.2em">Traiter les difficultés au plus tôt</h3>
       </section>
 
@@ -136,11 +139,12 @@
           <p>
             <img src="img/zabbix-stock-screen.png" height="580px">
           </p>
+          <p>Indicateurs système ET fonctionnels</p>
         </section> 
         <section>
           <h2>Erreurs & logs</h2>
-          <p>Un boulot à temps plein</p>
-          <p>Astreinte 24/7 par l'équipe</p>
+          <ul>
+            <li></li></ul>
         </section> 
         <section>
           <h2>Reportings métier</h2>
@@ -184,10 +188,10 @@
           <h2>Livraison</h2>
         </section>
         <section>
-          <h3><p>Modèle utilisé</p></h3>
+          <h3>Modèle utilisé</h3>
           <ul>
             <li style="color:red;text-decoration:line-through">Trunk/branch</li>
-            <li style="color:orange">Mainline based deployment</li>
+            <li style="color:orange">Trunk based deployment</li>
             <li class="green">Pull request</li>
           </ul>
           <br><br>
@@ -216,6 +220,7 @@
         <section>
           <h2>Validation</h2>
           <ul>
+            <li>Selenium</li>
             <li>Code review</li>
             <li>Showcase/validation fonctionnelle</li>
           </ul>
@@ -284,7 +289,7 @@
           <h3>Gestion des conflits</h3>
           <p>3. Merge entre branches</p>
           <img height="400" class="svg" src="img/svg/gitlog_resolution_merge.svg">
-          <p><h4 class="fragment">On impose un ordre de livraison</h4></p>
+          <h4 class="fragment">On impose un ordre de livraison</h4>
           <div class="fragment no-rebase"></div>
         </section>
         <section>
@@ -308,26 +313,26 @@
         </section>
         <section data-markdown>
           <script type="text/template">
-              ###Connaître les patterns à problèmes
-               
-              ```
-              ...
-              int ID_COURTIER_B2C_MGC = 112;
-              int ID_COURTIER_B2C_AMPLI = 113;
-              int ID_COURTIER_B2C_FMA = 114;
-              int ID_COURTIER_B2C_MILTIS = 115;
-              int ID_COURTIER_B2C_SMATIS = 116;
-              ```
+          ###Connaître les patterns à problèmes
 
-              ```
-              import static net.courtanet.tm.gwt.common.event.Event.releaseSourceEvent;
-              import static net.courtanet.ui.auto.EFieldAuto.EDM_COMPARE_RENEWAL;
-              import static net.courtanet.ui.core.tracking.ETrackingToken.renewal_not_visible;
-              import static net.courtanet.ui.core.tracking.ETrackingToken.renewal_visible;
-              ```              
+          ```
+          ...
+          int ID_COURTIER_B2C_MGC = 112;
+          int ID_COURTIER_B2C_AMPLI = 113;
+          int ID_COURTIER_B2C_FMA = 114;
+          int ID_COURTIER_B2C_MILTIS = 115;
+          int ID_COURTIER_B2C_SMATIS = 116;
+          ```
+
+          ```
+          import static net.courtanet.tm.gwt.common.event.Event.releaseSourceEvent;
+          import static net.courtanet.ui.auto.EFieldAuto.EDM_COMPARE_RENEWAL;
+          import static net.courtanet.ui.core.tracking.ETrackingToken.renewal_not_visible;
+          import static net.courtanet.ui.core.tracking.ETrackingToken.renewal_visible;
+          ```              
           </script>
         </section>
-      
+
         <section>
           <h3>Feature toggle</h3>
           <div class="fragment">
@@ -348,7 +353,7 @@
           </ul>
         </section>
       </section>
-    
+
       <section>
         <section>
           <h1>Nos Guides</h1>
@@ -356,67 +361,67 @@
         <section>
           <h2>Product Development Flow</h2>
           <ul>
-             <li>Travail en Flux tiré</li>
-             <li>Gestion des files d’attente</li>
-             <li>Lead Time plutôt que temps travaillé</li>
-             <li>Réduire les coûts de livraison</li>
-          </ul>
-          <img class="book" src="img/book-flow.jpg">
-        </section>
-        <section>
-          <h2>Kanban : Evolutionary Change</h2>
-          <ul>
-             <li>Visualiser</li>
-             <li>Limiter l'encours</li>
-             <li>Amélioration Continue</li>
-             <li>Leadership</li>
-          </ul>
-          <img class="book" src="img/book-kanban.jpg">
-        </section>
-        <section>
-          <h2>How Google Test Software</h2>
-          <ul>
-             <li>Not only QA </li>
-             <li>Ingénieur Qualité : fabrique des outils</li>
-             <li>Tests par l'équipe de dev</li>
-             <li>Qualification des Bugs</li>
-          </ul>
-          <img class="book" src="img/book-google.jpeg">
-        </section>
-        <section>
-          <h2>Continuous Delivery</h2>
-          <ol>
-             <li>Intégration Continue rapide </li>
-             <li>Master et Branches passent les tests </li>
-             <li>Déploiement automatisé et rapide </li>
-             <li>Monitoring de production </li>
-             <li>Root Cause Analysis</li>
-          </ol>
-          <img class="book" src="img/book-ContinuousDelivery.jpg">
-        </section>
-        <section>
-          <h2>GIT</h2>
-          <ul>
-              <li>Git branching model</li>
-              <li>Man Git</li>
-          </ul>
-          <img class="book" src="img/book-git.png">
-        </section>
-      </section>
-      <section>
-        <h1>Commencez par finir !</h1>
-      </section>
-    </div>
+           <li>Travail en Flux tiré</li>
+           <li>Gestion des files d’attente</li>
+           <li>Lead Time plutôt que temps travaillé</li>
+           <li>Réduire les coûts de livraison</li>
+         </ul>
+         <img class="book" src="img/book-flow.jpg">
+       </section>
+       <section>
+        <h2>Kanban : Evolutionary Change</h2>
+        <ul>
+         <li>Visualiser</li>
+         <li>Limiter l'encours</li>
+         <li>Amélioration Continue</li>
+         <li>Leadership</li>
+       </ul>
+       <img class="book" src="img/book-kanban.jpg">
+     </section>
+     <section>
+      <h2>How Google Test Software</h2>
+      <ul>
+       <li>Not only QA</li>
+       <li>Ingénieur Qualité : fabrique des outils</li>
+       <li>Tests par l'équipe de dev</li>
+       <li>Qualification des Bugs</li>
+     </ul>
+     <img class="book" src="img/book-google.jpeg">
+   </section>
+   <section>
+    <h2>Continuous Delivery</h2>
+    <ol>
+     <li>Intégration Continue rapide</li>
+     <li>Master et Branches passent les tests</li>
+     <li>Déploiement automatisé et rapide</li>
+     <li>Monitoring de production</li>
+     <li>Root Cause Analysis</li>
+   </ol>
+   <img class="book" src="img/book-ContinuousDelivery.jpg">
+ </section>
+ <section>
+  <h2>GIT</h2>
+  <ul>
+    <li>Git branching model</li>
+    <li>Man Git</li>
+  </ul>
+  <img class="book" src="img/book-git.png">
+</section>
+</section>
+<section>
+  <h1>Commencez par finir !</h1>
+</section>
+</div>
 
-  </div>
+</div>
 
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-  <script src="js/jquery-1.7.1.min.js"></script>
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.min.js"></script>
-  <script src="js/menu.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script src="js/menu.js"></script>
 
-  <script>
+<script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
