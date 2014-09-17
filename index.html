@@ -39,12 +39,12 @@
 
   <body>
     <div class="menu">
-      <div>Implémentation</div>
-      <div>Intégration continue</div>
+      <div>Implementation</div>
+      <div>Continuous integration</div>
       <div>Validation</div>
-      <div>Livraison</div>
-      <div>Mise en production</div>
-      <div>Exploitation</div>
+      <div>Delivery</div>
+      <div>Release</div>
+      <div>Operation</div>
     </div>
     <div class="reveal">
 
@@ -53,72 +53,72 @@
       <section>
         <section>
           <h1>Continuous delivery</h1>
-          <h2>Le contexte</h2>
+          <h2>Context</h2>
         </section>
         <section>
           <h2>LesFurets.com</h2>
           <ul>
-            <li>16 Développeurs</li>
-            <li>2 QE, 1 Ops, 1 Archi-codeur</li>
+            <li>17 developpers</li>
+            <li>1 QE, 1 Ops, 1 Architect</li>
           </ul>
         </section>
         <section>
           <h2>LesFurets.com</h2>
           <ul>
-            <li>1 Site Front, 1 Backoffice</li>
+            <li>1 website, 1 Backoffice</li>
             <li>10 Serveurs</li>
             <li>1 Code base</li>
-            <li>300k loc, 30k tests</li>
-            <li>200 Tests Selenium</li>
+            <li>300k lines of code, 30k tests</li>
+            <li>200 Selenium tests</li>
           </ul>
         </section>
         <section>
-          <h2>2012 - Mensuel</h2>
+          <h2>2012 - Monthly releases</h2>
           <ul>
-            <li>Sprint de 6 semaines</li>
-            <li>Subversion : Trunk + 1 Branche de maintenance</li>
-            <li>Build 15min + Selenium 1h</li>
-            <li>Recette 3-4 jours</li>
-            <li>Mise en production manuelle 1h30</li>
+            <li>6 weeks sprints</li>
+            <li>Subversion : Trunk + 1 support branch</li>
+            <li>Build : 15', Selenium : 1h</li>
+            <li>Testing phase : 3-4 days</li>
+            <li>Manual release : 1h 30'</li>
           </ul>
         </section>
         <section>
-          <h2>2014 - Daily</h2>
+          <h2>2014 - Daily releases</h2>
           <ul>
-            <li>Développement par User Story</li>
-            <li>GIT : Master + pull request</li>
-            <li>Livraison de ce qui est prêt à J+2</li>
-            <li>Build 3min + Selenium 10min</li>
-            <li>Mise en production en 6 min</li>
+            <li>Developments based on user stories</li>
+            <li>GIT : Master + pull requests</li>
+            <li>What's ready go live on D + 2</li>
+            <li>Build : 3' + Selenium : 10'</li>
+            <li>Release procedure : 6'</li>
           </ul>
         </section>
         <section>
           <ul>
-            <li>Janvier-Avril : 62 Mises en productions</li>
+            <li>January to April : 62 releases</li>
           </ul>
         </section>
       </section>
 
       <section>
         <h1>Continuous delivery</h1>
-        <h2>Notre pratique</h2>
+        <h2>Step by step</h2>
       </section>
 
       <section>
-        <h2>Cycle de developpement</h2>
+        <h2>Lifecycle of a change</h2>
         <ol>
-          <li>Implémentation</li>
-          <li>Intégration continue</li>
+          <li>Implementation</li>
+          <li>Continuous integration</li>
           <li>Validation</li>
-          <li>Livraison</li>
-          <li>Mise en production</li>
-          <li>Exploitation</li>
+          <li>Delivery</li>
+          <li>Release</li>
+          <li>Operation</li>
         </ol>
       </section>
 
       <section class="first">
         <section>
-          <h2>Exploitation</h2>
+          <h2>Operation</h2>
         </section>
         <section>
           <p>
@@ -127,32 +127,32 @@
           <p>
             <img src="img/zabbix-stock-screen.png" height="580px">
           </p>
-          <p>Indicateurs système ET fonctionnels</p>
+          <p>System AND functional monitoring</p>
         </section> 
         <section>
-          <h2>Erreurs & logs</h2>
+          <h2>Errors & logs</h2>
           <ul>
-            <li>200 stacks/jour <span class="fragment" data-fragment-index="1" style="text-decoration:underline">dont 20% JS</span></li>
+            <li>200 stacks a day <span class="fragment" data-fragment-index="1" style="text-decoration:underline">whose 20% are JS errors</span></li>
             <li class="fragment" data-fragment-index="2">1 stack = 1 mail</li>
             <li class="fragment" data-fragment-index="3">1h stack = 1 mail</li>
             <li class="fragment" data-fragment-index="3">24h stack = 1 mail</li>
           </ul>
         </section> 
         <section>
-          <h2>Reportings métier</h2>
+          <h2>Business reports</h2>
           <p class="fragment">Excel, emails, backoffice ...</p>
-          <p class="fragment">Une nouvelle fonctionnalité = un tracker</p>
-          <p class="fragment">le business devient ops !</p>
+          <p class="fragment">Track everything</p>
+          <p class="fragment">Business meets Ops</p>
         </section>  
       </section>
 
       <section>
         <section>
-          <h2>Mise en production</h2>
+          <h2>Release</h2>
           <img class="fragment" src="img/go-button-green.jpg">
         </section>
         <section>
-          <h3>Automatiser</h3>
+          <h3>Automate</h3>
           <p>"Infrastructure as code"</p>
           <div class="fragment packaging" data-fragment-index="1">
             <p style="text-decoration:underline">Packaging</p>
@@ -161,12 +161,12 @@
           <p class="packaging fragment" data-fragment-index="3"><img class="svg big" src="img/svg/detection-environnement.svg"></p>
         </section>
         <section>
-          <h3>Deploiement</h3>
+          <h3>Deployment</h3>
           <p>0 downtime</p>
           <p>Blue/green</p>
           <ul class="fragment">
-            <li>Environnement de production dupliqué</li>
-            <li>Loadbalancer en entrée</li>
+            <li>Doubled production environment</li>
+            <li>Loadbalancer</li>
           </ul>
           <br>
           <br>
@@ -178,10 +178,10 @@
 
       <section>
         <section>
-          <h2>Livraison</h2>
+          <h2>Delivery</h2>
         </section>
         <section>
-          <h3>Modèle utilisé</h3>
+          <h3>Versionning model</h3>
           <ul>
             <li style="text-decoration:line-through">Trunk/branch</li>
             <li style="text-decoration:line-through">Trunk based deployment</li>
@@ -189,24 +189,23 @@
           </ul>
           <br><br>
           <div class="fragment">
-            <p>On livre ...</p>
-            <p>les développements complets</p>
+            <p>We deliver ...<br>
+            finalised developments</p>
           </div>
         </section>
         <section>
           <p><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
-          <p>feature = nouvelle fonctionnalité, bugfix, changement de conf ..</p>
+          <p>feature = bugfix, configuration change ..</p>
         </section>
         <section>
           <p><img src="img/payage.JPG"></p>
-          <p>Les branches finies, passent</p>
-          <p>Rien n'arrête la MEP</p>
+          <p>Who's ready goes by ...</p>
+          <p>The release goes on</p>
         </section>
         <section>
-          <h3>Conflits entre les branches</h3>
+          <h3>Conflicts</h3>
           <p class="fragment"><img height="350" src="img/finish-first.jpg"></p>
           <p class="fragment" style="margin-top:-325px;margin-bottom:100px"><img height="250" src="img/big-cross.png"></p>
-          <p class="fragment">Besoin vital d'éviter les conflits </p>
         </section>
       </section>
 
@@ -215,17 +214,16 @@
           <h2>Validation</h2>
           <ul>
             <li>Selenium</li>
-            <li>Code review</li>
-            <li>Showcase/validation fonctionnelle</li>
+            <li>Code reviews</li>
+            <li>Showcase/functional validation</li>
           </ul>
         </section>
         <section>
-          <p>Pull requests => isolement</p>
+          <p>Pull requests => isolation</p>
           <p class="dev fragment current-visible"><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
           <p class="dev fragment"><img class="svg big" src="img/svg/gitlog_environnement.svg"></p>
         </section>
         <section>
-          <p>Utilité de l'environnement dev</p>
           <ul>
             <li>Recette continue</li>
             <li>Seleniums</li>
@@ -236,12 +234,12 @@
 
       <section>
         <section>
-          <h2>Intégration continue</h2>
-          <h3>A chaque commit</h3>
+          <h2>Continuous integration</h2>
+          <h3>On every commit</h3>
           <ul>
             <li>Compilation</li>
-            <li>Tests automatisés</li>
-            <li class="fragment" style="color:green">Merge des feature branches</li>
+            <li>Automated tests</li>
+            <li class="fragment" style="color:green">Merge of all branches</li>
           </ul>
         </section>
         <section>
@@ -253,32 +251,15 @@
         <section>
           <h3>Octopus</h3>
           <ul>
-            <li class="fragment">Construction de l'environnement de test (dev)</li>
-            <li class="fragment">Détection des conflits entre branches</li>
-            <li class="fragment">Assure la simplicité de la livraison</li>
-            <li class="fragment">Plug/unplug les branches facilement</li>
+            <li class="fragment">Build a test environment</li>
+            <li class="fragment">Detect conflicts</li>
+            <li class="fragment">Plug/unplug branches easily</li>
           </ul>
         </section>
         <section>
-          <h3>Gestion des conflits</h3>
-          <p class="fragment">Annuler une modif devient simple</p>
-        </section>
-        <section>
-          <h3>Gestion des conflits</h3>
-          <p>2. Mettre le fichier dans le même état dans les deux branches</p>
-          <p class="fragment">Recopie manuelle</p>
-          <div class="fragment">
-            <p>Ou</p>
-            <p>cherry-pick</p>
-            <img height="400" class="svg" src="img/svg/gitlog_resolution_cherry-pick.svg">
-          </div>
-        </section>
-        <section>
-          <h3>Gestion des conflits</h3>
-          <p>3. Merge entre branches</p>
-          <img height="400" class="svg" src="img/svg/gitlog_resolution_merge.svg">
-          <h4 class="fragment">On impose un ordre de livraison</h4>
-          <div class="fragment no-rebase"></div>
+          <h3>Managing conflicts</h3>
+          lots of options<br>
+          resolve is the worst one
         </section>
         <section>
           <h3>Proof of concept</h3>
@@ -288,35 +269,29 @@
 
       <section class="last">
         <section>
-          <h2>Implémentation</h2>
-          <p class="fragment">Qu'est ce qui change ?</p>
-        </section>
-        <section>
-          <h3>Eviter les conflits</h3>
-          <blockquote class="fragment">La facilité de merge témoigne de la santé du code</blockquote>
-          <div class="fragment" style="margin-top:50px;">
-            <p><span class="green">S</span>OLID</p>
-            <p class="green">Single responsibility principle</p>
-          </div>
+          <h2>Implementation</h2>
         </section>
         <section>
           <h3>Feature toggle</h3>
           <div class="fragment">
-            <p>Quand ?</p>
+            <p>When ?</p>
             <ul>
-              <li>Beaucoup de conflits</li>
-              <li>Feature instable</li>
-              <li>Développement long</li>
+              <li>Lots of conflicts</li>
+              <li>Long term branch</li>
             </ul>
           </div>
         </section>
         <section>
-          <h2>Passer un refactoring</h2>
-          <p class="fragment">Perturbations inévitables</p>
+          <h2>Big refactorings</h2>
           <ul>
-            <li class="fragment">Directement dans le master</li>
-            <li class="fragment">Faire un point de synchronisation</li>
+            <li>Too many conflicts</li>
+            <li>Long term task</li>
           </ul>
+          <br><br>
+          <div class="fragment">
+            Special treatment<br>
+            Blocks the release
+          </div>
         </section>
       </section>
 
