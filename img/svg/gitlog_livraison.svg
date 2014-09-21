@@ -903,9 +903,9 @@
        style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
        xml:space="preserve"><tspan
          y="30.36216"
-         x="292"
+         x="350"
          id="tspan17376-3"
-         sodipodi:role="line">release</tspan></text>
+         sodipodi:role="line">RC</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text6163-5-7-3"
@@ -935,18 +935,10 @@
        x="1016.3789"
        style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
        xml:space="preserve"><tspan
-         y="962.36218"
-         x="1016.3789"
-         id="tspan17376-3-5-9-1"
-         sodipodi:role="line">mise</tspan><tspan
-         id="tspan3097"
-         y="1032.3622"
-         x="1016.3789"
-         sodipodi:role="line">en</tspan><tspan
          id="tspan3099"
          y="1102.3622"
          x="1016.3789"
-         sodipodi:role="line">prod</tspan></text>
+         sodipodi:role="line">release</tspan></text>
     <path
        sodipodi:type="arc"
        style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:6.66666651;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
