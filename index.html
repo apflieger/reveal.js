@@ -86,15 +86,15 @@
           <h2>2014 - Daily releases</h2>
           <ul>
             <li>Developments based on user stories</li>
-            <li>GIT : Master + pull requests</li>
+            <li>git : master + pull requests</li>
             <li>What's ready go live on D + 2</li>
             <li>Build : 3' + Selenium : 10'</li>
-            <li>Release procedure : 6'</li>
+            <li>Release procedure : 10'</li>
           </ul>
         </section>
         <section>
           <ul>
-            <li>January to April : 62 releases</li>
+            <li>January to September : 143 releases</li>
           </ul>
         </section>
       </section>
@@ -132,7 +132,7 @@
         <section>
           <h2>Errors & logs</h2>
           <ul>
-            <li>200 stacks a day <span class="fragment" data-fragment-index="1" style="text-decoration:underline">whose 20% are JS errors</span></li>
+            <li>200 stacks a day <span class="fragment" data-fragment-index="1" style="text-decoration:underline"><br>20% js</span></li>
             <li class="fragment" data-fragment-index="2">1 stack = 1 mail</li>
             <li class="fragment" data-fragment-index="3">1h stack = 1 mail</li>
             <li class="fragment" data-fragment-index="3">24h stack = 1 mail</li>
@@ -150,6 +150,9 @@
         <section>
           <h2>Release</h2>
           <img class="fragment" src="img/go-button-green.jpg">
+          <aside class="notes">
+            has to be simple
+          </aside>
         </section>
         <section>
           <h3>Automate</h3>
@@ -159,6 +162,9 @@
             <img class="svg big" src="img/svg/Packaging.svg">
           </div>
           <p class="packaging fragment" data-fragment-index="3"><img class="svg big" src="img/svg/detection-environnement.svg"></p>
+          <aside class="notes">
+            monolith
+          </aside>
         </section>
         <section>
           <h3>Deployment</h3>
@@ -179,6 +185,9 @@
       <section>
         <section>
           <h2>Delivery</h2>
+          <aside>
+            we use git
+          </aside>
         </section>
         <section>
           <h3>Versionning model</h3>
@@ -202,37 +211,35 @@
           <p>Who's ready goes by ...</p>
           <p>The release goes on</p>
         </section>
-        <section>
-          <h3>Conflicts</h3>
-          <p class="fragment"><img height="350" src="img/finish-first.jpg"></p>
-          <p class="fragment" style="margin-top:-325px;margin-bottom:100px"><img height="250" src="img/big-cross.png"></p>
-        </section>
       </section>
 
       <section>
         <section>
           <h2>Validation</h2>
           <ul>
+            <li>Manual tests</li>
             <li>Selenium</li>
             <li>Code reviews</li>
             <li>Showcase/functional validation</li>
           </ul>
         </section>
-        <section>
-          <p>Pull requests => isolation</p>
-          <p class="dev fragment current-visible"><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
-          <p class="dev fragment"><img class="svg big" src="img/svg/gitlog_environnement.svg"></p>
-        </section>
-        <section>
-          <ul>
-            <li>Dog feeding</li>
-            <li>Seleniums</li>
-            <li>Log analysis</li>
-          </ul>
-        </section>
       </section>
 
       <section>
+        <section>
+          "oh, you're using feature branching? Too bad you're not doing continuous integration"
+        </section>
+        <section>
+          <p>Pull requests => isolation</p>
+          <ul>
+            <li>Dog feeding</li>
+            <li>Conflicts</li>
+          </ul>
+        </section>
+        <section>
+          <p class="dev"><img class="svg big" src="img/svg/gitlog_livraison.svg"></p>
+          <p class="dev fragment"><img class="svg big" src="img/svg/gitlog_environnement.svg"></p>
+        </section>
         <section>
           <h2>Continuous integration</h2>
           <h3>On every commit</h3>
