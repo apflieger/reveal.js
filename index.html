@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="stylesheet" href="css/reveal.min.css">
-  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="css/theme/lesfurets.css" id="theme">
 
   <!-- For syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -38,6 +38,10 @@
   </head>
 
   <body>
+    <div class="footer">
+      <a href="https://www.lesfurets.com" target="_blank"><img class="logo" src="img/logo_lesfurets_885x128_no_back.png"></a>
+    </div>
+
      <div class="reveal">
 
      <div class="slides">
@@ -113,7 +117,7 @@
 
     <section>    
       <section>
-          <h2>We read few things</h2>
+          <h2>A few things we read</h2>
       </section>
       <section>
          <h2>Agile Manifesto</h2>
@@ -147,6 +151,7 @@
        <section>
        <h2>Deliver Early, Deliver Often</h2>
        <img src="img/facebook2.png">
+       <p>Source: http://paulhammant.com/2013/03/13/facebook-tbd-take-2/</p>
        </section>
       <section>
         <h2>Kanban : Evolutionary Change</h2>
@@ -182,7 +187,7 @@
       </section>
 
       <section>
-         <h1><br/>Start by finishing !</h1>
+         <h1>Start by finishing !</h1>
          <h2>Because French guys are doing everything backward</h2>
       </section>
 
@@ -202,14 +207,14 @@
           <h2>Operations</h2>
           <h3>Technical Monitoring AND Alerting</h3>
           <p>
-            <img src="img/lesfurets-production.png" height="580px">
+            <img width="50%" height="50%" src="img/lesfurets-production.png" >
           </p>
         </section> 
         <section>
           <h2>Operations</h2>
           <h3>Functional Monitoring AND Alerting</h3>
           <p>
-            <img src="img/lesfurets-functional.png" height="580px">
+            <img width="50%" height="50%" src="img/lesfurets-functional.png" >
           </p>
         </section> 
       </section>
@@ -226,14 +231,7 @@
         <section>
           <h3>Automate</h3>
           <p>"Infrastructure as code"</p>
-          <div class="fragment packaging" data-fragment-index="1">
-            <p style="text-decoration:underline">Packaging</p>
-            <img class="svg big" src="img/svg/Packaging.svg">
-          </div>
-          <p class="packaging fragment" data-fragment-index="3"><img class="svg big" src="img/svg/detection-environnement.svg"></p>
-          <aside class="notes">
-            monolith
-          </aside>
+          <img class="svg big" src="img/svg/detection-environnement.svg">
         </section>
         <section>
           <h3>Deployment</h3>
@@ -245,8 +243,10 @@
           </ul>
           <br>
           <br>
+<!-- Casse avec le nouveau theme
           <p class="blue-green fragment current-visible"><img class="svg" src="img/svg/blue-green-1.svg"></p>
           <p class="blue-green fragment current-visible"><img class="svg" src="img/svg/blue-green-2.svg"></p>
+-->
           <p class="blue-green fragment"><img class="svg" src="img/svg/blue-green-3.svg"></p>
         </section>
       </section>
@@ -336,6 +336,12 @@
           </ul>
         </section>
         <section>
+            <h3>Managing conflicts</h3>
+            <p><img width="50%" class="fragment" style="" src="img/finish-first.jpg"></p>
+            <p style="margin-top:-400px;"><img height="250" class="fragment nostyle" src="img/big-cross.png"></p>
+            <p class="fragment">Avoid conflicts vs Resolve conflicts</p>
+        </section>
+        <section>
           <h3>Managing conflicts</h3>
           <br></br>
           <h4>A lot of options</h4>
@@ -356,7 +362,11 @@
 
       <section class="last">
         <section>
-          <h2>Exceptions to the branching model</h2>
+          <h3>Exceptions to the branching model</h3>
+            <ul>
+              <li>Feature toggles</li>
+              <li>Big refactorings</li>
+            </ul>
         </section>
         <section>
           <h3>Feature toggle</h3>
@@ -407,6 +417,7 @@
           <li class="fragment">Follow us <a href="http://twitter.com/BeastieFurets">@BeastieFurets</a> cousins of <a href="http://twitter.com/ctmers">@ctmers</a></li>
           <li class="fragment"><a href="http://tech.comparethemarket.com/selenium-in-the-sky-with-lxc-2">selenium-in-the-sky-with-lxc@ctmers</a></li>
         </ul>
+      </section>
       <section>
         <h3>Thank you</h3>
         <img src="img/octave.jpg">
@@ -432,7 +443,7 @@
 				center: true,
         embedded: true,
 
-				theme: 'moon', // available themes are in /css/theme
+				theme: 'lesfurets', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
