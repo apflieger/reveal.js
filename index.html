@@ -38,119 +38,194 @@
   </head>
 
   <body>
-    <div class="menu">
-      <div>Implementation</div>
-      <div>Continuous integration</div>
-      <div>Validation</div>
-      <div>Delivery</div>
-      <div>Release</div>
-      <div>Operation</div>
-    </div>
-    <div class="reveal">
+     <div class="reveal">
 
      <div class="slides">
 
       <section>
         <section>
+          <h2></h2>
           <h1>Continuous delivery</h1>
-          <h2>Context</h2>
+          <h2>The French Way</h2>
+          <br>
+          <br>Dimitri BAELI - Arnaud PFLIEGER
+          <br>https://github.com/lesfurets
         </section>
         <section>
           <h2>LesFurets.com</h2>
           <ul>
-            <li>17 developpers</li>
-            <li>1 QE, 1 Ops, 1 Architect</li>
+            <li>22 software engineers</li>
+            <li>3 Devops (automation & operations)</li>
+            <li>1 Architect</li>
           </ul>
         </section>
+        
         <section>
           <h2>LesFurets.com</h2>
           <ul>
-            <li>1 website, 1 Backoffice</li>
-            <li>10 Serveurs</li>
-            <li>1 Code base</li>
-            <li>300k lines of code, 30k tests</li>
+            <li>1 website, 6 product lines</li>
+            <li>400k lines of code, 30k Unit tests</li>
             <li>200 Selenium tests</li>
+            <li>10+ Servers</li>
+            <li>1 code base</li>
+          </ul>
+        </section>
+        
+        
+        <section>
+          <h2>In 2012</h2>
+          <h3>11 releases</h3>
+          <ul>
+            <li><u>Mind set:</u></li>
+            <li>Plan/Estimate/Code/Test/Release monthly</li>
           </ul>
         </section>
         <section>
-          <h2>2012 - Monthly releases</h2>
+            <h2>In 2014</h2>
+            <h3>143 releases</h3>
           <ul>
-            <li>6 weeks sprints</li>
-            <li>Subversion : Trunk + 1 support branch</li>
-            <li>Build : 15', Selenium : 1h</li>
-            <li>Testing phase : 3-4 days</li>
-            <li>Manual release : 1h 30'</li>
+            <li><u>Mind set:</u></li>
+            <li>Ship what is READY the next day</li>
           </ul>
         </section>
         <section>
-          <h2>2014 - Daily releases</h2>
+          <h2>In 2012</h2>
           <ul>
-            <li>Developments based on user stories</li>
-            <li>git : master + pull requests</li>
-            <li>What's ready go live on D + 2</li>
-            <li>Build : 3' + Selenium : 10'</li>
-            <li>Release procedure : 10'</li>
+            <li>Scrum sprints ended by a release</li>
+            <li>Subversion : trunk + 1 maintenance branch</li>
+            <li>Build : 15min, Selenium in a grid: 200 in 1h</li>
+            <li>Testing phase : 4-6 days, Deployment in 2h</li>
+            <li>Commit to Prod : from 5d to 4 weeks</li>
           </ul>
         </section>
         <section>
+          <h2>In 2014</h2>
           <ul>
-            <li>January to September : 143 releases</li>
+            <li>Lean Kanban</li>
+            <li>Daily releases</li>
+            <li>GIT : master + feature branches (~30</li>
+            <li>Build : 3' (was 10') + Selenium : 10' (was 1h)</li>
+            <li>Release : 5min + 30min monitoring</li>
+            <li>Commit to Prod : coding time + 1 day</li>
           </ul>
         </section>
+    </section>
+
+    <section>    
+      <section>
+          <h2>We read few things</h2>
+      </section>
+      <section>
+         <h2>Agile Manifesto</h2>
+         <h2>Principle 3</h2>
+         <ul>
+           <li>Our highest priority is to satisfy the customer</li>
+           <li>through early and continuous delivery of valuable software.</li>
+           <li>Delivery Early, Deliver Often</li>
+           <li>but Always Deliver Value</li>
+         </ul>
+       </section>
+       <section>
+          <h2>Product Development Flow</h2>
+          <h3>Don Reinertsen</h3>
+          <ul>
+           <li>Work with a flow</li>
+           <li>Manage Queues of work</li>
+           <li>Lead Time more than work duration</li>
+           <li>Reduce per release costs</li>
+         </ul>
+         <img class="book" src="img/book-flow.jpg">
+      </section>
+       <section>
+         <h2>Continuous Delivery</h2>
+         <h3>Jez Humble</h3>
+         <ol>
+          <li>Fast builds</li>
+          <li>Pre-Commit check (all tests ever ok)</li>
+          <li>Simple and fast automated deployments</li>
+          <li>Production monitoring and alerting</li>
+          <li>Root Cause Analysis</li>
+        </ol>
+        <img class="book" src="img/book-ContinuousDelivery.jpg">
+       </section>
+       <section>
+       <h2>Deliver Early, Deliver Often</h2>
+       <img src="img/facebook2.png">
+       </section>
+      <section>
+        <h2>Kanban : Evolutionary Change</h2>
+        <h3>David Anderson</h3>
+        <ul>
+         <li>Visualize the work</li>
+         <li>Limit the Work in Process</li>
+         <li>Explicit Rules</li>
+         <li>Continuous Improvement</li>
+         <li>Leadership</li>
+       </ul>
+       <img class="book" src="img/book-kanban.jpg">
+      </section>
+      <section>
+        <h2>How Google Test Software</h2>
+        <h3>James Whitaker</h3>
+      <ul>
+       <li>NoQA : Quality Engineering</li>
+       <li>SET : build test tools for devs</li>
+       <li>Dev QA their own changes</li>
+     </ul>
+     <img class="book" src="img/book-google.jpeg">
+       </section>
+       <section>
+       <h2>The release frequency</h2>
+       <h3>impacts the codebase</h3>
+       <img src="img/facebook-2-branching.png">
+       </section>
+       <section>
+         <h2>GIT FLOW</h2>
+         <h3>Vincent Driessen</h3>
+         <ul>
+           <li>A successful git branching model</li>
+           <li>http://nvie.com/posts/a-successful-git-branching-model/</li>
+         </ul>
+         <img class="book" src="img/book-git.png">
+       </section>
       </section>
 
       <section>
-        <h1>Continuous delivery</h1>
-        <h2>Step by step</h2>
-        <aside class="notes">
-          I'm going to describe our workflow, I'll speak about all the differents steps that a change go throught 
-        </aside>
+         <h1><br/>Start by finishing !</h1>
+         <h2>Because French guys are doing everything backward</h2>
       </section>
 
       <section>
-        <h2>Lifecycle of a change</h2>
+        <h2>Continuous Delivery</h2>
         <ol>
-          <li>Implementation</li>
-          <li>Continuous integration</li>
-          <li>Validation</li>
+          <li>Operations</li>
           <li>Delivery</li>
-          <li>Release</li>
-          <li>Operation</li>
+          <li>Validation</li>
+          <li>Continuous integration</li>
+          <li>Analysis & Coding : Branch</li>
         </ol>
       </section>
 
       <section class="first">
         <section>
-          <h2>Operation</h2>
-        </section>
-        <section>
+          <h2>Operations</h2>
+          <h3>Technical Monitoring AND Alerting</h3>
           <p>
-            <img src="img/zabbix_logo.png">
+            <img src="img/lesfurets-production.png" height="580px">
           </p>
-          <p>
-            <img src="img/zabbix-stock-screen.png" height="580px">
-          </p>
-          <p>System AND functional monitoring</p>
         </section> 
         <section>
-          <h2>Errors & logs</h2>
-          <ul>
-            <li>500-800 stacks a day <span style="text-decoration:underline"><br>20% js</span></li>
-            <li class="fragment" data-fragment-index="1">1 stack = 1 mail</li>
-            <li class="fragment" data-fragment-index="2">1h stack = 1 mail</li>
-            <li class="fragment" data-fragment-index="2">24h stack = 1 mail</li>
-          </ul>
+          <h2>Operations</h2>
+          <h3>Functional Monitoring AND Alerting</h3>
+          <p>
+            <img src="img/lesfurets-functional.png" height="580px">
+          </p>
         </section> 
-        <section>
-          <h2>Business reports</h2>
-          <p class="fragment">Excel, emails, backoffice ...</p>
-          <p class="fragment">Business meets Ops</p>
-        </section>  
       </section>
 
       <section>
         <section>
-          <h2>Release</h2>
+          <h2>Delivery</h2>
           <img class="fragment" src="img/go-button-green.jpg">
           <aside class="notes">
             even before speaking about continuous delivery ...
@@ -187,44 +262,53 @@
 
       <section>
         <section>
-          <h2>Delivery</h2>
-          <aside class="notes">
-            we use git.
-            wikipedia page
-          </aside>
-        </section>
-        <section>
-          <ul>
-            <li style="text-decoration:line-through">Trunk/branch</li>
-            <li style="text-decoration:line-through">Trunk based deployment</li>
-            <li >Pull request</li>
-          </ul>
-          <br><br>
-          <div class="fragment">
-            <p>We deliver ...<br>
-            finalised developments</p>
-          </div>
-        </section>
-      </section>
-
-      <section>
-        <section>
           <h2>Validation</h2>
           <ul>
             <li>Manual tests</li>
+            <li>Regression Testing : Zeno</li>
             <li>Selenium</li>
             <li>Code reviews</li>
             <li>Showcase/functional validation</li>
           </ul>
         </section>
         <section>
-          <p><img src="img/payage.JPG"></p>
-          <p>Who's ready goes by ...</p>
-          <p>The release goes on</p>
+          <h2>Zeno</h2>
+          <h3>Visual Regression</h3>
+          <p><img src="img/zeno-diff.png"></p>
+        </section>
+        <section>
+          <h2>Selenium</h2>
+          <p><img src="img/tweet-selenium.png"></p>
+        </section>
+        <section>
+          <h2>Selenium</h2>
+          <ul>
+            <li>Page Object Pattern</li>
+            <li>Fluent API (FluentLenium)</li>
+            <li>Selenium in the sky with LXC</li>
+            <li>200 Selenium tests in <10min</li>
+          </ul>
         </section>
       </section>
 
       <section>
+        <section>
+          <h2>Continuous integration</h2>
+          <p><img src="img/payage.JPG"></p>
+          <div>
+            We deliver ...
+          </div>
+          <div class="fragment">
+            when it's ready</p>
+          </div>
+        </section>
+        <section>
+          <ul>
+            <li style="text-decoration:line-through">Trunk + Release branch(</li>
+            <li style="text-decoration:line-through">Trunk based (all commits to master + toggle)</li>
+            <li >Feature Branch</li>
+          </ul>
+        </section>
         <section>
           "oh, you're using feature branching? Too bad you're not doing continuous integration"
         </section>
@@ -245,37 +329,46 @@
           <ul>
             <li>Compilation</li>
             <li>Automated tests</li>
-            <li class="fragment" style="color:green">Octopus</li>
+            <li class="fragment" style="color:green">Continuous Merge (Octopus)</li>
           </ul>
         </section>
         <section>
-          <h3>Octopus</h3>
+          <h3>Continuous Merge</h3>
           <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-1.svg">
           <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-2.svg">
           <img class="svg big octopus fragment current-visible" src="img/svg/gitlog_octopus-3.svg">
         </section>
         <section>
-          <h3>Octopus</h3>
+          <h3>Continuous Merge</h3>
           <ul>
             <li class="fragment">Build a test environment</li>
             <li class="fragment">Detect conflicts</li>
             <li class="fragment">Plug/unplug branches easily</li>
+            <li class="fragment">Git Octopus Merge</li>
           </ul>
         </section>
         <section>
           <h3>Managing conflicts</h3>
-          lots of options<br>
-          resolve is the worst one
+          <br></br>
+          <h4>A lot of options</h4>
+          <ul>
+            <li class="fragment">Remove the conflicting branch (put aside, comeback later)</li>
+            <li class="fragment">Fine a way to make it merge</li>
+            <li class="fragment">Merge branches in conflict (resolve the conflict)</li>
+            <li class="fragment">Merge in master (+ merge everywhere)</li>
+          </ul>
+          <br></br>
+          <p  class="fragment">Merge is the worst case (default in trunk based development)</p>          
         </section>
         <section>
-          <h3>Proof of concept</h3>
+          <h3>30 branches at work !</h3>
           <img width="75%" src="img/teamcity-octopus.png">
         </section>
       </section>
 
       <section class="last">
         <section>
-          <h2>Implementation</h2>
+          <h2>Exceptions to the branching model</h2>
         </section>
         <section>
           <h3>Feature toggle</h3>
@@ -300,63 +393,27 @@
           </div>
         </section>
       </section>
-
-      <!--<section>
-        <section>
-          <h1>Nos Guides</h1>
-        </section>
-        <section>
-          <h2>Product Development Flow</h2>
-          <ul>
-           <li>Travail en Flux tiré</li>
-           <li>Gestion des files d’attente</li>
-           <li>Lead Time plutôt que temps travaillé</li>
-           <li>Réduire les coûts de livraison</li>
-         </ul>
-         <img class="book" src="img/book-flow.jpg">
-       </section>
-       <section>
-        <h2>Kanban : Evolutionary Change</h2>
-        <ul>
-         <li>Visualiser</li>
-         <li>Limiter l'encours</li>
-         <li>Amélioration Continue</li>
-         <li>Leadership</li>
-       </ul>
-       <img class="book" src="img/book-kanban.jpg">
-     </section>
-     <section>
-      <h2>How Google Test Software</h2>
-      <ul>
-       <li>Not only QA</li>
-       <li>Ingénieur Qualité : fabrique des outils</li>
-       <li>Tests par l'équipe de dev</li>
-       <li>Qualification des Bugs</li>
-     </ul>
-     <img class="book" src="img/book-google.jpeg">
-   </section>
-   <section>
-    <h2>Continuous Delivery</h2>
-    <ol>
-     <li>Intégration Continue rapide</li>
-     <li>Master et Branches passent les tests</li>
-     <li>Déploiement automatisé et rapide</li>
-     <li>Monitoring de production</li>
-     <li>Root Cause Analysis</li>
-   </ol>
-   <img class="book" src="img/book-ContinuousDelivery.jpg">
- </section>
- <section>
-  <h2>GIT</h2>
-  <ul>
-    <li>Git branching model</li>
-    <li>Man Git</li>
-  </ul>
-  <img class="book" src="img/book-git.png">
-</section>
-</section>-->
 <section>
-  <h1>Commencez par finir !</h1>
+  <h3>Thank you to </h3>
+  <ul>
+    <li class="fragment">Arnaud: let's see if branching really fails (octopus)</li>
+    <li class="fragment">Mehdi: I bet it won't work, please keep svn (bet accepted !)</li>
+    <li class="fragment">Thomas: Docker+RamFS for the Selenium Grid (1h -> 10min)</li>
+    <li class="fragment">Emmanuel: Ok for some bugs in production, but fix them fast</li>
+    <li class="fragment">Gilles: Go, go, go ! (architect)</li>
+  </ul>
+</section>
+<section>
+  <h3>One more thing</h3>
+  <ul>
+    <li class="fragment">Fork us on GitHub</li>
+    <li class="fragment"><a href="http://github.com/lesfurets">http://github.com/lesfurets</a></li>
+    <li class="fragment">Selenium in the sky with LXC</li>
+    <li class="fragment">Git Octopus - Continous Merging</li>
+    <li class="fragment">And more soon ...</li>
+    <li class="fragment">Follow us <a href="http://twitter.com/BeastieFurets">@BeastieFurets</a> cousins of <a href="http://twitter.com/ctmers">@ctmers</a></li>
+  </ul>
+  <img width="75%" src="img/octave.png">
 </section>
 </div>
 
