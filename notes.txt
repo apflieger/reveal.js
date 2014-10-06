@@ -1,1 +1,0 @@
- Notes pour Continuous Delivery: * Ajouter la description d'une release Sources:* http://radar.oreilly.com/2009/03/continuous-deployment-5-eas.html* http://paulhammant.com/2013/03/13/facebook-tbd-take-2/
